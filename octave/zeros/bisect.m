@@ -5,11 +5,11 @@ b = input("B point: ");
 Emax = input("Tolelance: ");
 Imax = input("Max.iter.: ");
 if (a!=b && Emax>0 && Imax>0)
-	ab=abs(b-a);ab=abs(b-a);fa=0;fb=0;c=0;fc=0;eab=0;
+	ab=abs(b-a);fa=0;fb=0;c=0;fc=0;
 	i=0;
-	e=Emax+1;
+	e=Emax+1;eab=e;
 	printf("\n \bfn\t | a\t\t | b\t\t | c\t\t | fa\t\t | fb\t\t | fc\t\t | fafc\t | ei\t\t | eab \n");
-	while (e>Emax && i<Imax)
+	while (eab>Emax && i<Imax)
 		fa=f(a);
 		fb=f(b);
 		c=(a+b)/2;
@@ -30,7 +30,7 @@ if (a!=b && Emax>0 && Imax>0)
 			return; # por si es cero
 		end
 	end
-	printf("\nX=%f, Eabs=%f\n",c,eab);
+	printf("\nX=%f, it=%i, Eabs=%f\n",c,i,eab);
 else
 	printf("\nInput error\n");
 end
