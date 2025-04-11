@@ -12,8 +12,10 @@ if (Emax>0 && Imax>0)
 	i=0;e=Emax+1;
 	printf(" n\t | x\t\t | fx\t\t | xi\t\t | fxi\t\t | e\n");
 	while (e>Emax && i<Imax)
-		fa = f(a);
-		p  = a-f(a)/deriv(f,a);
+		fa  = f(a); #func, point, delta, calcquant, deriv ord
+		dfa = deriv (f, a, Emax/1000, 2, 1);
+		ddfa= deriv (f, a, Emax/1000, 2, 2);
+		p  = a - 2*(fa/dfa)/(2-(fa*ddfa/(ddfa^2)));
 		fp = f(p);
 		e  = abs(p-a);
 		i += 1;
