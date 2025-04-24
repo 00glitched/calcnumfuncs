@@ -14,7 +14,7 @@
 ## along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ## -*- texinfo -*-
-## @deftypefn {} {@var{v} =} makePolyVect (@var{input})
+## @deftypefn {} {@var{v} =} makePolyVect (@var{zerosVect})
 ##
 ## @seealso{}
 ## @end deftypefn
@@ -22,10 +22,10 @@
 ## Author:  <fedora@00glitch>
 ## Created: 2025-04-14
 
-function v = makePolyVect (input)
-  if(isvector(input))
+function v = zerosPolyVect (zerosVect)
+  if(isvector(zerosVect))
     # (x-x1)*...*(x-xn) // y(xi)=0
-    z=input;  # z =[-x1,...,-xn]
+    z=zerosVect;  # z =[-x1,...,-xn]
     v=[1];w=[];
     for i=1:length(z)
       w=[0,v];  # poly * xvar
