@@ -19,6 +19,10 @@ Numerical calculus methods functions in different languajes
 	- [ ] - Chebyshev nodes
 	- [ ] - Least squares
 	- [ ] - Splines
-- [ ] Linear systems
+- [ ] Linear system
+	- [x] - Jacobi
+	- [x] - Gauss-Seidel
+	- [ ] - Over-relaxation
+	- [ ] - Gradient-descent
 - [ ] Integration
 - [ ] Differentiation
