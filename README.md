@@ -16,8 +16,8 @@ Numerical calculus methods functions in different languajes
 - [ ] Interpolation
 	- [ ] - Newton divided differences
 	- [ ] - Langrange polynomial interpolation
-	- [ ] - Chebyshev nodes
-	- [ ] - Least squares
+	- [x] - Chebyshev nodes
+	- [x] - Least squares
 	- [ ] - Splines
 - [ ] Linear system
 	- [x] - Jacobi
